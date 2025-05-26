@@ -1,0 +1,150 @@
+.friend-request-section {
+    padding: 24px;
+    background: white;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  .filter-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-tab {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .filter-tab.active {
+    background-color: #1877F2;
+    color: white;
+  }
+  
+  .filter-tab:not(.active) {
+    background-color: #F0F2F5;
+    color: #1a1a1a;
+  }
+  
+  .filter-tab:not(.active):hover {
+    background-color: #E4E6EB;
+  }
+  
+  .request-count {
+    background: #e41e3f;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 12px;
+    min-width: 20px;
+    text-align: center;
+  }
+  
+  .friend-request-card {
+    background: white;
+    border: 1px solid #E4E6EB;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .friend-request-card:hover {
+    background-color: #F8F9FA;
+  }
+  
+  .request-user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .request-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .request-user-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .request-user-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1c1e21;
+  }
+  
+  .request-user-mutual {
+    font-size: 13px;
+    color: #65676B;
+    margin-top: 2px;
+  }
+  
+  .request-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .accept-button,
+  .reject-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .accept-button {
+    background-color: #1877F2;
+    color: white;
+    border: none;
+  }
+  
+  .accept-button:hover {
+    background-color: #166FE5;
+  }
+  
+  .reject-button {
+    background-color: #F0F2F5;
+    color: #1a1a1a;
+    border: none;
+  }
+  
+  .reject-button:hover {
+    background-color: #E4E6EB;
+  }
+  
+  .friend-request-empty {
+    text-align: center;
+    padding: 32px;
+    color: #65676B;
+    font-size: 15px;
+  }
+  
+  /* Loading state */
+  .friend-request-card.loading {
+    padding: 16px;
+  }
+  
+  .friend-request-card.loading .animate-pulse {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+  }

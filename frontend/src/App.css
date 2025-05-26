@@ -1,0 +1,43 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-container {
+  flex: 1;
+  margin-left: 68px; /* Thay đổi từ 240px thành 68px cho đúng với width của sidebar */
+  padding: 20px;
+  margin-right: 150px;
+  margin-top: 56px; /* Thêm margin-top thay vì padding-top ở app-container */
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 800px;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+  .main-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-container {
+    margin-left: 68px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.ranking-box {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+  
+  .ranking-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .ranking-box ul {
+    list-style: none;
+    padding-left: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .ranking-box ul li {
+    margin-bottom: 15px;
+  }
+  
+  .ranking-box ul li .title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .ranking-box ul li .preview {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .ranking-box ul li .interaction {
+    font-size: 12px;
+    color: #999;
+  }

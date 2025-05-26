@@ -1,0 +1,202 @@
+/* Điều chỉnh style cho article.post-card */
+article.post-card {
+  position: relative;
+  overflow: visible;
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Style cho header trong post-card */
+article.post-card .post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  position: relative;
+  padding-right: 32px;
+}
+
+/* Style cho phần actions */
+article.post-card .post-actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+article.post-card .more-options-btn {
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  color: #000;
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+article.post-card .more-options-btn:hover {
+  background-color: #f2f3f5;
+}
+
+/* Menu dropdown */
+article.post-card .post-actions-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  z-index: 100;
+  padding: 8px 0;
+}
+
+/* Style cho các nút trong menu */
+article.post-card .post-actions-menu button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: #050505;
+  cursor: pointer;
+  text-align: left;
+}
+
+article.post-card .post-actions-menu button:hover {
+  background-color: #f2f3f5;
+}
+
+.author-name {
+  margin-right: 8px; /* Thêm khoảng cách giữa tên và thời gian */
+}
+
+.post-meta {
+  padding-left: 8px; /* Thêm padding cho thời gian */
+  color: #65676b;
+}
+
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px; /* Giảm khoảng cách giữa text và nút xóa */
+  font-size: 13px;
+  padding: 4px 8px 4px 12px; /* Giảm padding bên phải */
+}
+
+.remove-tag-btn {
+  width: 16px;
+  height: 16px;
+  font-size: 12px; /* Giảm kích thước chữ x */
+  padding: 0;
+  margin-left: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.remove-tag-btn:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.privacy-section {
+  position: relative;
+  border-top: 1px solid #e4e6eb;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.privacy-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.privacy-info {
+  flex: 1;
+  text-align: left;
+  margin-left: 12px;
+}
+
+.privacy-label {
+  display: block;
+  font-size: 12px;
+  color: #65676b;
+}
+
+.privacy-value {
+  font-weight: 500;
+}
+
+.menu-arrow {
+  color: #65676b;
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+.privacy-submenu {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 250px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+}
+
+.privacy-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.privacy-option:hover {
+  background-color: #f2f3f5;
+}
+
+.privacy-option.active {
+  background-color: #e7f3ff;
+}
+
+.option-info {
+  flex: 1;
+  text-align: left;
+  margin-left: 12px;
+}
+
+.option-title {
+  display: block;
+  font-weight: 500;
+}
+
+.option-desc {
+  font-size: 12px;
+  color: #65676b;
+}
+
+.check-icon {
+  color: #1877f2;
+  margin-left: 8px;
+}

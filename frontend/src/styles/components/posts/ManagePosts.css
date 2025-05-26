@@ -1,0 +1,230 @@
+/* ManagePosts.css */
+.manage-account-container {
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Profile Header */
+.profile-header {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.profile-banner {
+    padding: 32px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-avatar-container {
+    margin-bottom: 16px;
+}
+
+.profile-avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1c1e21;
+}
+
+/* Tabs Navigation */
+.profile-tabs {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    border: none;
+    background: none;
+    color: #65676b;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    background-color: #f2f3f5;
+}
+
+.tab-btn.active {
+    color: #1877f2;
+    background-color: #e7f3ff;
+}
+
+/* Content Area */
+.profile-content {
+    background: white;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Posts Grid */
+.posts-grid {
+    display: grid;
+    gap: 24px;
+}
+
+.post-card {
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+}
+
+.post-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.post-author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-meta h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.post-meta span {
+    font-size: 14px;
+    color: #65676b;
+}
+
+.post-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.post-excerpt {
+    color: #65676b;
+    margin-bottom: 16px;
+}
+
+/* Post Actions */
+.post-actions {
+    display: flex;
+    gap: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: none;
+    background: none;
+    color: #65676b;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: #f2f3f5;
+}
+
+/* Introduction Section */
+.intro-section {
+    padding: 24px;
+}
+
+.intro-tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.intro-tab {
+    padding: 8px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: none;
+    color: #65676b;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.intro-tab.active {
+    background-color: #1877f2;
+    color: white;
+    border-color: #1877f2;
+}
+
+/* Form Sections */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-section label {
+    font-weight: 500;
+    color: #1c1e21;
+}
+
+.form-section input,
+.form-section textarea {
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form-section textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Create Post Button */
+.create-post-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #1877f2;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 24px 0;
+    transition: background-color 0.2s ease;
+}
+
+.create-post-btn:hover {
+    background-color: #166fe5;
+}
+
+.save-changes-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1A8917;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.save-changes-btn:hover {
+    background-color: #156912;
+}

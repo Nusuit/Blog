@@ -1,0 +1,36 @@
+.social-login {
+    display: flex;
+    align-items: center; /* Căn giữa icon và chữ theo chiều dọc */
+    justify-content: flex-start; /* Nội dung bắt đầu từ trái */
+    gap: 12px; /* Tăng khoảng cách giữa icon và chữ */
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    max-width: none;
+    text-align: left;
+    width: 280px; /* Giảm chiều rộng nút */
+    margin: 12px 0;
+    background-color: #ffffff; /* Nền trắng sáng hơn */
+    border: 1px solid #ccc; /* Đường viền xám nhẹ */
+    cursor: pointer;
+    font-weight: bold;
+    color: #333; /* Màu chữ đậm hơn */
+    transition: all 0.3s ease;
+}
+
+.social-login img {
+    flex-shrink: 0; /* Ngăn icon bị co lại */
+    width: 24px; /* Đảm bảo kích thước icon cố định */
+    height: 24px;
+}
+
+.social-login span {
+    flex: 1; /* Đảm bảo chữ chiếm đủ không gian */
+    line-height: 1; /* Căn chữ gọn gàng theo chiều dọc */
+}
+
+.social-login:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}

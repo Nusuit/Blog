@@ -1,0 +1,170 @@
+.suggestions-container {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .suggestions-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .suggestions-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+  }
+  
+  .suggestions-content {
+    padding: 8px;
+  }
+  
+  .suggestion-card {
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .suggestion-card:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .suggestion-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .suggestion-avatar {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+  }
+  
+  .avatar-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #eee;
+    transition: border-color 0.2s ease;
+  }
+  
+  .avatar-image:hover {
+    border-color: #2563eb;
+  }
+  
+  .suggestion-info {
+    flex: 1;
+    min-width: 0;
+    cursor: pointer;
+  }
+  
+  .suggestion-name {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 4px;
+    transition: color 0.2s ease;
+  }
+  
+  .suggestion-name:hover {
+    color: #2563eb;
+  }
+  
+  .mutual-friends {
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .suggestion-actions {
+    flex-shrink: 0;
+  }
+  
+  /* Loading state */
+  .loading-container {
+    padding: 16px;
+  }
+  
+  .loading-card {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .loading-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #eee;
+  }
+  
+  .loading-content {
+    flex: 1;
+  }
+  
+  .loading-line {
+    height: 12px;
+    background-color: #eee;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+  
+  .loading-line:last-child {
+    width: 60%;
+  }
+  
+  /* Empty state */
+  .empty-state {
+    padding: 32px 16px;
+    text-align: center;
+    color: #666;
+  }
+  
+  /* Friend management buttons */
+  .friend-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .add-friend-btn {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+  }
+  
+  .add-friend-btn:hover {
+    background-color: #c7d2fe;
+  }
+  
+  .pending-btn {
+    background-color: #e5e7eb;
+    color: #6b7280;
+    cursor: not-allowed;
+  }
+  
+  /* Animation */
+  .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }

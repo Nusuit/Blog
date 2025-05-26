@@ -1,0 +1,275 @@
+/* Đặt trang căn giữa toàn bộ */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Màu nền */
+    font-family: Arial, sans-serif;
+}
+
+/* Khung chính cho đăng nhập */
+.login-container {
+    margin-top: 150px !important;
+    display: flex; /* Chia khung thành hai phần */
+    justify-content: space-between; /* Tạo khoảng cách giữa các phần */
+    align-items: stretch;
+    width: 600px; /* Độ rộng tổng của khung */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Phần bên trái (form đăng nhập) */
+.login-left {
+    flex: 2; /* Chiếm 2 phần tổng chiều rộng */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px; /* Khoảng cách với cột bên phải */
+}
+
+/* Heading */
+.login-left h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Tăng khoảng cách giữa các input khi có nhiều trường trong Sign Up */
+.login-left form input {
+    margin: 8px auto; /* Điều chỉnh khoảng cách phù hợp */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 90%; /* Giữ chiều rộng đồng nhất */
+}
+
+/* Style cho nút Log in */
+.login-left form button {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #0095F6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.login-left form button:hover {
+    background-color: #007bff !important;
+}
+
+/* Style cho phần Remember me và Forgot password */
+.login-left .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.login-left .options label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Khoảng cách giữa checkbox và chữ */
+    margin-left: -10px;
+}
+
+
+/* Style cho liên kết "Don't have an account?" */
+.login-left p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Liên kết */
+.login-left p a {
+    color: #0095F6 !important;
+    text-decoration: none;
+}
+
+.login-left p a:hover {
+    text-decoration: underline;
+    color: #007bff !important;
+}
+
+/* Phần bên phải ("Or" và các nút khác) */
+.login-right {
+    flex: 1; /* Chiếm 1 phần tổng chiều rộng */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #ddd; /* Đường phân cách */
+    padding-left: 20px; /* Khoảng cách với cột bên trái */
+    position: relative; /* Để căn chỉnh chữ "Or" */
+}
+
+/* Chữ "Or" nằm chính giữa */
+.divider {
+    position: absolute;
+    top: 50%; /* Chính giữa chiều cao */
+    left: -1px; /* Đẩy vào thêm 2px */
+    transform: translate(-50%, -50%);
+    background-color: white; /* Tách biệt chữ "Or" với đường phân cách */
+    padding: 0 10px;
+    font-size: 14px;
+    color: #999;
+    font-weight: bold;
+}
+
+/* Style cho thanh nav */
+nav {
+    position: absolute;
+    top: 10px; /* Cách đỉnh 10px */
+    right: 20px; /* Cách phải 20px */
+    font-size: 14px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+    margin-left: 15px; /* Khoảng cách giữa các liên kết */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Style cho phần Remember me */
+.login-left .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 10px;
+}
+
+/* Khung cho Remember me */
+.login-left .options .remember-me {
+    display: flex; /* Căn chỉnh nội dung ngang */
+    align-items: center; /* Căn giữa checkbox và chữ */
+    gap: 5px; /* Khoảng cách giữa checkbox và chữ */
+    padding: 3px 8px; /* Giảm padding để khung nhỏ gọn hơn */
+    border: 1px solid #ddd; /* Viền khung */
+    border-radius: 4px; /* Bo góc khung */
+    background-color: #f9f9f9; /* Nền nhạt */
+    font-size: 12px; /* Đảm bảo kích cỡ chữ phù hợp */
+    line-height: 1; /* Đảm bảo chiều cao nội dung đồng nhất */
+}
+
+/* Khung chính giống nhau */
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Phần bên trái giống login */
+.login-left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+/* Heading của SignUp */
+.login-left h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input trong form */
+.login-left form input {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Nút submit */
+.login-left form button {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.login-left form button:hover {
+    background-color: #0056b3;
+}
+
+/* Liên kết "Already have an account?" */
+.login-left p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-left p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-left p a:hover {
+    text-decoration: underline;
+}
+
+/* Phần bên phải (Social Login) */
+.login-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Chữ "Or" */
+.divider {
+    position: absolute;
+    top: 50%;
+    left: -1px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #999;
+    font-weight: bold;
+}
+

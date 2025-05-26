@@ -1,0 +1,13 @@
+{
+    "general_context": "This is a blogging platform where users can create, read, and interact with blog posts. Users can register, login, create posts, follow other users, and engage with content through likes and comments.",
+    
+    "post_creation": "To create a new blog post: 1. Click the 'Create Post' button in the top right corner. 2. Add a title for your post. 3. Write your content in the editor. 4. Optionally add images. 5. Select a topic category. 6. Click 'Post' to publish.",
+    
+    "authentication": "Users can register with email or use Google/Outlook login. After registration, verify your email. For login, use your email/username and password. If you forget your password, use the 'Forgot Password' link on the login page.",
+    
+    "topics": "The blog platform supports five main topics: Technology, Pets, Lifestyle, Food, and Sports. Each post must be categorized under one of these topics. Users can filter posts by topic using the topic bar.",
+    
+    "interaction_features": "Users can interact with posts through: Likes (click the heart icon), Comments (click the comment icon to read or add comments), and Shares (use the share icon to share posts). Users can also follow other bloggers to see their posts in their feed.",
+    
+    "user_profile": "The user profile page shows your posts, followers, and basic information. You can edit your profile, change avatar, update personal information, and manage your posts from this page."
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="profile">
+          <div class="profile-icon"></div>
+          <span class="profile-name">Name 1</span>
+        </div>
+
+        <div class="actions">
+          <button class="show-more">...</button>
+          <button class="close">Close</button>
+        </div>
+      </header>
+
+      <main>
+        <div class="banner">
+          <h1>Create Post</h1>
+
+          <div class="icons-container">
+            <button class="span">
+              <img class="icon3" src="../img/periscope.png" alt="" />
+            </button>
+            <button class="span">
+              <img class="icon3" src="../img/iTunes.png" alt="" />
+            </button>
+            <button class="span">
+              <img class="icon3" src="../img/friend_tag.png" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="post-form">
+          <div class="image-upload">
+            <div class="upload-box">
+              <img src="../img/vector.png" alt="" />
+              <p>Drop your image here or <a href="#">browse</a></p>
+            </div>
+          </div>
+          <div class="post-details">
+            <label for="post-title">Title</label>
+            <input type="text" id="post-title" placeholder="Write here..." />
+
+            <label for="post-description">Description</label>
+            <textarea
+              id="post-description"
+              placeholder="The start of a wonderful story..."
+            ></textarea>
+          </div>
+        </div>
+
+        <button class="post-button">Post</button>
+      </main>
+    </div>
+  </body>
+</html>

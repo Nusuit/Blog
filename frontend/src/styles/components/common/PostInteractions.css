@@ -1,0 +1,234 @@
+/* styles/components/common/PostInteractions.css */
+.post-interactions {
+    margin-top: 16px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 20px;
+    padding: 8px 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: none;
+    background: none;
+    color: #65676b;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: #f2f3f5;
+}
+
+.action-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.count {
+    color: #65676b;
+    font-size: 13px;
+    margin-left: 4px;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 16px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 16px;
+}
+
+.comments-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.comment {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    padding: 8px;
+}
+
+.comment-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.comment-content {
+    background: #f2f3f5;
+    padding: 8px 12px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+.comment-content h4 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.comment-content p {
+    margin: 4px 0 0;
+    font-size: 13px;
+}
+
+.comment-input {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.comment-input input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.comment-input button {
+    padding: 6px 16px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Share Panel */
+.share-panel {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    padding: 16px;
+    width: 300px;
+    z-index: 10;
+}
+
+.share-panel h3 {
+    margin: 0 0 16px;
+    font-size: 16px;
+}
+
+.share-options {
+    display: grid;
+    gap: 8px;
+}
+
+.share-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: opacity 0.2s;
+}
+
+.share-btn:hover {
+    opacity: 0.9;
+}
+
+.share-btn.facebook {
+    background: #1877f2;
+    color: white;
+}
+
+.share-btn.twitter {
+    background: #1da1f2;
+    color: white;
+}
+
+.share-btn.linkedin {
+    background: #0a66c2;
+    color: white;
+}
+
+.share-btn.copy-link {
+    background: #f2f3f5;
+    color: #050505;
+}
+
+.comment {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    padding: 8px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.comment-time {
+    font-size: 12px;
+    color: #65676b;
+}
+
+.comment-content {
+    flex: 1;
+    background: #f0f2f5;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+.comment-content h4 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.comment-content p {
+    margin: 4px 0 0;
+    font-size: 13px;
+}
+
+.comment-input {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 8px;
+    background: #f0f2f5;
+    border-radius: 20px;
+}
+
+.comment-input input {
+    flex: 1;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.comment-input button {
+    padding: 6px 12px;
+    border: none;
+    background: #1877f2;
+    color: white;
+    border-radius: 16px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.comment-input button:hover {
+    background-color: #166fe5;
+}

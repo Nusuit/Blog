@@ -1,0 +1,212 @@
+.create-post-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.create-post-modal {
+  background-color: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  padding: 16px;
+  border-bottom: 1px solid #e4e6eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #65676b;
+}
+
+.modal-content {
+  padding: 16px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #e4e6eb;
+  border-radius: 6px;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.modal-footer {
+  padding: 16px;
+  border-top: 1px solid #e4e6eb;
+  text-align: right;
+}
+
+.post-input-trigger {
+  flex: 1;
+  padding: 8px 12px;
+  background: #f0f2f5;
+  border-radius: 20px;
+  color: #65676b;
+  cursor: pointer;
+}
+
+.post-input-trigger:hover {
+  background: #e4e6eb;
+}
+
+.modal-footer {
+  padding: 16px;
+  border-top: 1px solid #e4e6eb;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancel-button,
+.submit-button {
+  padding: 8px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancel-button {
+  background: #e4e6eb;
+  border: none;
+  color: #050505;
+}
+
+.cancel-button:hover {
+  background: #d8dadf;
+}
+
+.submit-button {
+  background: #1877f2;
+  border: none;
+  color: white;
+}
+
+.submit-button:hover {
+  background: #166fe5;
+}
+
+.submit-button:disabled {
+  background: #e4e6eb;
+  cursor: not-allowed;
+}
+
+/* Style cho phần share story */
+.create-post {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  align-items: center; /* Căn giữa avatar với input */
+}
+
+.create-post .user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-input-trigger {
+  flex: 1;
+  padding: 12px 16px;
+  background: #f0f2f5;
+  border-radius: 20px;
+  color: #65676b;
+  cursor: pointer;
+}
+
+/* Style cho tags */
+.post-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.topic-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 16px;
+  background-color: #f0f2f5;
+  color: #1877f2;
+  font-size: 13px;
+  white-space: nowrap; /* Ngăn text bị xuống dòng */
+  margin-right: 4px; /* Thêm khoảng cách giữa các tag */
+}
+
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  background-color: #e7f3ff;
+  color: #1877f2;
+  font-size: 13px;
+  white-space: nowrap;
+  margin-right: 4px;
+}
+
+/* Điều chỉnh khoảng cách cho container chứa tags */
+.post-meta-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Đảm bảo tags không bị dính vào nhau khi xuống dòng */
+.post-topics > * {
+  margin: 2px; /* Thêm margin cho tất cả các phần tử con của post-topics */
+}
+
+/* Style cho phần stats bên dưới */
+.post-stats {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+  color: #65676b;
+}
